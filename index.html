@@ -270,11 +270,30 @@
     font-weight:600;
   }
 
-  /* ---------- SMALL PHONES ---------- */
-  @media (max-width:380px){
-    .hero h1{font-size:26px;}
-    .lot-footer{flex-wrap:wrap;}
-    .bid-btn{width:100%;justify-content:center;}
+  /* ---------- PHONES (covers all standard iPhone widths) ---------- */
+  @media (max-width:480px){
+    .wrap{padding:0 16px;}
+    .hero{padding:32px 16px 24px;}
+    .kicker{font-size:10px;padding:5px 12px 5px 9px;}
+    .hero h1{font-size:clamp(26px,8vw,32px);}
+    .hero-sub{font-size:13.5px;padding:0 6px;}
+    .catalog{padding:28px 16px 32px;}
+    .grid{gap:14px;}
+    .lot{padding:18px 16px 16px;gap:14px;}
+    .lot-brand{gap:10px;}
+    .logo{width:34px;height:34px;border-radius:9px;}
+    .logo svg{width:17px;height:17px;}
+    .lot-name{font-size:clamp(16px,5.6vw,21px);}
+    .lot-tagline{font-size:13px;min-height:auto;}
+    .lot-footer{flex-wrap:wrap;gap:12px;padding-top:14px;}
+    .price-value{font-size:17px;}
+    .bid-btn{width:100%;justify-content:center;padding:11px 18px;}
+    .cta{padding:32px 16px 40px;}
+    .cta h3{font-size:20px;}
+    .cta p{font-size:13px;padding:0 6px;}
+  }
+  @media (max-width:340px){
+    .lot-name{font-size:15px;}
   }
 </style>
 </head>
